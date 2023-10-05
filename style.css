@@ -385,6 +385,11 @@ a.button-link:active,
 }
 
 @media (max-width: 768px) {
+    .popup-content {
+        /* ... (other styles) ... */
+        overflow: hidden; /* Add this line to prevent scrolling for the popup */
+    }
+    
     body {
         margin: 10px;
     }
