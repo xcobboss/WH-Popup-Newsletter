@@ -47,10 +47,10 @@ button:focus,button:hover {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    background-image: url('https://i.pinimg.com/1200x/48/a1/c3/48a1c3c3a2c198a7773500c5583ffc9f.jpg'); /* Replace with the path to your image */
-    background-size: cover; /* Ensures your image covers the entire body */
-    background-repeat: no-repeat; /* Prevents your image from repeating */
-    background-position: center; /* Centers your image */
+    background-image: url('https://i.pinimg.com/1200x/48/a1/c3/48a1c3c3a2c198a7773500c5583ffc9f.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +63,7 @@ form {
     padding: 30px;
     border-radius: 8px;
     width: 100%;
-    max-width: 900px; /* Corrected the variable definition */
+    max-width: 900px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -155,7 +155,7 @@ input[type="checkbox"] + label {
     cursor: pointer;
     display: inline-block;
     width: 120px;
-    text-align: left; /* Add this line */
+    text-align: left;
 }
 
 .button-container {
@@ -215,7 +215,7 @@ a.button-link:active,
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* Add a new class for the disabled button */
+/* Class for the disabled button */
 input[type="submit"].disabled,
 a.button-link.disabled {
     background-color: #D3D3D3; /* Grey */
@@ -224,7 +224,7 @@ a.button-link.disabled {
     transform: none;  /* Remove any transformation */
 }
 
-/* Ensure no hover, active or focus styles apply to disabled button */
+/* No hover, active or focus styles apply to disabled button */
 input[type="submit"].disabled:hover,
 input[type="submit"].disabled:active,
 input[type="submit"].disabled:focus,
@@ -262,7 +262,7 @@ a.button-link.disabled:focus {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px; /* Adjust as per your design requirements */
+    gap: 20px;
     max-width: 700px;
     margin: auto;
 }
@@ -310,7 +310,7 @@ a.button-link.disabled:focus {
 #close-after-submit-btn {
     text-align: center;
     margin-top: 20px;
-    display: none; /* Initially hide the button */
+    display: none; 
     background-color: #A4383B;
     color: #fff;
     padding: 5px 20px;
@@ -330,13 +330,13 @@ a.button-link.disabled:focus {
 
 .popup-container {
     display: none;
-    position: fixed; /* Using fixed to cover the entire viewport */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 / 4%);
-    backdrop-filter: blur(10px); /* Add this line */
+    backdrop-filter: blur(10px); 
     justify-content: center;
     align-items: center;
 }
@@ -360,7 +360,7 @@ a.button-link.disabled:focus {
 }
 
 .popup {
-    display: none; /* Initially hidden */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -374,15 +374,10 @@ a.button-link.disabled:focus {
 #email-form {
     background-color: #fff;
     padding: px;
-    /* Width as per your requirement */
     width: 100%;
-    /* Max width to ensure the form is usable on all screen sizes */
     --max-width: 500px;
-    /* Centered Text */
     text-align: center;
-    /* Positioned Relatively */
     position: relative;
-    /* Optional: Border Radius for Rounded Corners */
     border-radius: 8px;
 }
 
