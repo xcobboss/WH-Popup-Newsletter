@@ -219,6 +219,25 @@ a.button-link:active,
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+input[type="submit"].disabled,
+a.button-link.disabled {
+    background-color: #D3D3D3; /* Grey */
+    cursor: not-allowed;
+    box-shadow: none;  /* Remove shadow */
+    transform: none;  /* Remove any transformation */
+}
+
+input[type="submit"].disabled:hover,
+input[type="submit"].disabled:active,
+input[type="submit"].disabled:focus,
+a.button-link.disabled:hover,
+a.button-link.disabled:active,
+a.button-link.disabled:focus {
+    background-color: #D3D3D3;
+    transform: none;
+    box-shadow: none;
+}
+
 .checkboxes-container {
     display: flex;
     flex-wrap: wrap;
