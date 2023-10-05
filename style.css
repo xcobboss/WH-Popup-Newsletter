@@ -475,6 +475,17 @@ a.button-link.disabled:focus {
         margin: 10px auto; /* Reduce margin to create less space */
     }
 
+    .close-btn {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #A4383B;
+    z-index: 9999;
+    padding: 10px;
+    }
+
     @keyframes progressAnimation {
         0% {
             width: 0;
