@@ -1,7 +1,7 @@
-button  {
-	color: #f7f1db;
+button {
+    color: #f7f1db;
     background-color: #A4383B;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 500;
     border-radius: 0;
     box-sizing: border-box;
@@ -30,8 +30,8 @@ button  {
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
-    -webkit-transition: 0.4s cubic-bezier(.25,.8,.25,1);
-    transition: 0.4s cubic-bezier(.25,.8,.25,1);
+    -webkit-transition: 0.4s cubic-bezier(.25, .8, .25, 1);
+    transition: 0.4s cubic-bezier(.25, .8, .25, 1);
 }
 
 button:focus {
@@ -39,23 +39,25 @@ button:focus {
     outline-offset: -2px
 }
 
-button:focus,button:hover {
+button:focus,
+button:hover {
     color: #f7f1db;
     background-color: #73272b
 }
 
-body {
+body {	
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    background-image: url('https://i.pinimg.com/1200x/48/a1/c3/48a1c3c3a2c198a7773500c5583ffc9f.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
+    background-image: url('https://i.pinimg.com/1200x/48/a1/c3/48a1c3c3a2c198a7773500c5583ffc9f.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures your image covers the entire body */
+    background-repeat: no-repeat; /* Prevents your image from repeating */
+    background-position: center; /* Centers your image */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0px;
+	overflow-x: hidden;
 }
 
 form {
@@ -64,13 +66,14 @@ form {
     border-radius: 8px;
     width: 100%;
     max-width: 900px;
+    /* Corrected the variable definition */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .input-row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
 .input-group {
@@ -156,6 +159,7 @@ input[type="checkbox"] + label {
     display: inline-block;
     width: 120px;
     text-align: left;
+    /* Add this line */
 }
 
 .button-container {
@@ -192,7 +196,7 @@ a.button-link {
 
 a.button-link {
     background-color: #D9534F;
-    width: 375px; 
+    width: 375px;
 }
 
 input[type="submit"]:hover,
@@ -214,28 +218,6 @@ a.button-link:active,
     transform: scale(0.95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
-
-/* Class for the disabled button */
-input[type="submit"].disabled,
-a.button-link.disabled {
-    background-color: #D3D3D3; /* Grey */
-    cursor: not-allowed;
-    box-shadow: none;  /* Remove shadow */
-    transform: none;  /* Remove any transformation */
-}
-
-/* No hover, active or focus styles apply to disabled button */
-input[type="submit"].disabled:hover,
-input[type="submit"].disabled:active,
-input[type="submit"].disabled:focus,
-a.button-link.disabled:hover,
-a.button-link.disabled:active,
-a.button-link.disabled:focus {
-    background-color: #D3D3D3;
-    transform: none;
-    box-shadow: none;
-}
-
 
 .checkboxes-container {
     display: flex;
@@ -260,11 +242,15 @@ a.button-link.disabled:focus {
 
 .department-checkboxes-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 20px; /* Adjust as per your design requirements */
     max-width: 700px;
     margin: auto;
+}
+
+.department-checkbox-group {
+    flex: 1 1 30%;
 }
 
 .submitting {
@@ -285,7 +271,7 @@ a.button-link.disabled:focus {
 }
 
 .done {
-    background-color: #3daa69; 
+    background-color: #3daa69;
     cursor: default;
 }
 
@@ -310,7 +296,8 @@ a.button-link.disabled:focus {
 #close-after-submit-btn {
     text-align: center;
     margin-top: 20px;
-    display: none; 
+    display: none;
+    /* Initially hide the button */
     background-color: #A4383B;
     color: #fff;
     padding: 5px 20px;
@@ -320,25 +307,35 @@ a.button-link.disabled:focus {
     font-size: 16px;
     transition: background-color 0.3s;
     text-decoration: none;
-	margin: auto;
+    margin: auto;
 }
 
 #close-after-submit-btn:hover {
     background-color: #8C2E32;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .popup-container {
     display: none;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgb(0 0 0 / 4%);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+	overflow-y: auto;
 }
 
 .popup-content {
@@ -356,17 +353,18 @@ a.button-link.disabled:focus {
     right: -40px;
     cursor: pointer;
     font-size: 18px;
-	color: #A4383B;
+    color: #A4383B;
 }
 
 .popup {
     display: none;
+    /* Initially hidden */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
@@ -374,74 +372,101 @@ a.button-link.disabled:focus {
 #email-form {
     background-color: #fff;
     padding: px;
+    /* Width as per your requirement */
     width: 100%;
+    /* Max width to ensure the form is usable on all screen sizes */
     --max-width: 500px;
+    /* Centered Text */
     text-align: center;
+    /* Positioned Relatively */
     position: relative;
+    /* Optional: Border Radius for Rounded Corners */
     border-radius: 8px;
 }
 
-
 @media (max-width: 768px) {
     body {
-    margin: 10px;
-	}
-	
-	h1 {
-    font-size: 22px;
-	}
-	
-	form {
-        width: 100%;
-        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-bottom: 40px; /* Adjust margin for spacing on mobile */
+        margin-top: 150px; /* Add margin at the top to keep the h1 in frame */
+    }
+
+    form {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 15px;
     }
 
     .input-row {
         flex-direction: column;
         align-items: flex-start;
-		
     }
 
     .input-group {
         flex: 1;
         margin-left: 8px;
         margin-bottom: 0px;
-		width: 100%;
+        width: 100%;
     }
 
     .input-group:last-child {
         margin-right: 0;
     }
 
-	.heading:after {
-	   width: 100%;
-    }	
-	.checkboxes-container::after {
-	   width: 100%;
-    }
-	
-    .button-container::before {
+    .heading:after {
         width: 100%;
     }
 
-    input[type="submit"] {
+    .checkbox-group {
+    flex: 0 0 50%;
+    text-align: left;
+    }
+    
+    .checkboxes-container::after {
         width: 100%;
     }
-	@keyframes progressAnimation {
-    0% {
-        width: 0;
-    }
-    100% {
+
+    .button-container::before {
         width: 100%;
     }
-}
+	
+	.department-checkboxes-container {
+        grid-template-columns: repeat(2, 1fr); /* Set it to two columns */
+        grid-template-rows: auto; /* Reset the rows */
+        margin-top: 10px; /* Add some top margin */
+    }
+
+    .department-checkbox-group {
+        text-align: left; /* Align the labels to the left */
+        margin-bottom: 60px;
+    }
+    
+    input[type="submit"],
+    a.button-link {
+        width: 100%;
+        margin: 10px auto; /* Reduce margin to create less space */
+    }
+
+    @keyframes progressAnimation {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 900px) {
     .heading:after {
-	   width: 100%;
-    }	
+        width: 100%;
+    }
+
     input[type="checkbox"] + label {
-    width: 140px;
-}
+        width: auto; /* Adjust as needed */
+    }
 }
