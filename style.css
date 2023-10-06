@@ -432,7 +432,7 @@ a.button-link.disabled:focus {
     h1 {
         font-size: 22px;
         margin-bottom: 35px; /* Adjust margin for spacing on mobile */
-        margin-top: 300px; /* Add margin at the top to keep the h1 in frame */
+        margin-top: 200px; /* Add margin at the top to keep the h1 in frame */
     }
 
     form {
@@ -512,53 +512,11 @@ a.button-link.disabled:focus {
     }
 }
 
-@media (max-width: 900px) {
-    .popup-container {
-    display: none;
-    position: fixed;
-    top: auto;
-    left: auto;
-    width: 90%;
-    height: 90%;
-    background-color: rgb(0 0 0 / 4%);
-    backdrop-filter: blur(10px);
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 0.5s ease-in-out;
-	overflow-y: auto;
-}
+
+
     
-    .popup-content {
-        overflow: hidden; /* Add this line to prevent scrolling for the popup */
-    }
-    
-    .heading:after {
-        width: 90%;
-    }
 
-    input[type="checkbox"] + label {
-        width: auto; /* Adjust as needed */
-    }
 
-    .checkbox-group {
-    flex: 1 2 30%;
-    text-align: left;
-    }
 
-    .checkboxes-container::after {
-        width: 100%;
-    }
 
-    .department-checkbox-group {
-        text-align: left; /* Align the labels to the left */
-        margin-bottom: 60px;
-    }
 
-    .input-group {
-        flex: 1;
-        margin-left: 10px;
-        margin-bottom: 0px;
-        width: 100%;
-    }
-
-}
