@@ -421,12 +421,17 @@ a.button-link.disabled:focus {
     border-radius: 10px;
 }
     .popup-content {
-        /* ... (other styles) ... */
+        background-color: #fff;
+        border-radius: 15px;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
         overflow: hidden; /* Add this line to prevent scrolling for the popup */
+        padding: 5px 5px;
     }
     
     body {
-        margin: 0px;
+        margin: auto;
     }
 
     h1 {
@@ -511,12 +516,3 @@ a.button-link.disabled:focus {
         }
     }
 }
-
-
-
-    
-
-
-
-
-
