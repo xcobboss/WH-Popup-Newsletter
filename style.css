@@ -48,10 +48,10 @@ button:hover {
 body {	
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    background-image: url('https://i.pinimg.com/1200x/48/a1/c3/48a1c3c3a2c198a7773500c5583ffc9f.jpg'); /* Replace with the path to your image */
-    background-size: cover; /* Ensures your image covers the entire body */
-    background-repeat: no-repeat; /* Prevents your image from repeating */
-    background-position: center; /* Centers your image */
+    background-image: url('images/website.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +66,6 @@ form {
     border-radius: 8px;
     width: 100%;
     max-width: 900px;
-    /* Corrected the variable definition */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -159,7 +158,6 @@ input[type="checkbox"] + label {
     display: inline-block;
     width: 120px;
     text-align: left;
-    /* Add this line */
 }
 
 .button-container {
@@ -210,7 +208,6 @@ a.button-link:focus,
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Active state for both buttons */
 input[type="submit"]:active,
 a.button-link:active,
 #close-after-submit-btn {
@@ -221,10 +218,10 @@ a.button-link:active,
 
 input[type="submit"].disabled,
 a.button-link.disabled {
-    background-color: #D3D3D3; /* Grey */
+    background-color: #D3D3D3;
     cursor: not-allowed;
-    box-shadow: none;  /* Remove shadow */
-    transform: none;  /* Remove any transformation */
+    box-shadow: none;
+    transform: none;
 }
 
 input[type="submit"].disabled:hover,
@@ -263,7 +260,7 @@ a.button-link.disabled:focus {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px; /* Adjust as per your design requirements */
+    gap: 20px;
     max-width: 700px;
     margin: auto;
 }
@@ -377,7 +374,6 @@ a.button-link.disabled:focus {
 
 .popup {
     display: none;
-    /* Initially hidden */
     position: fixed;
     top: 0;
     left: 0;
@@ -391,15 +387,10 @@ a.button-link.disabled:focus {
 #email-form {
     background-color: #fff;
     padding: px;
-    /* Width as per your requirement */
     width: 100%;
-    /* Max width to ensure the form is usable on all screen sizes */
     --max-width: 500px;
-    /* Centered Text */
     text-align: center;
-    /* Positioned Relatively */
     position: relative;
-    /* Optional: Border Radius for Rounded Corners */
     border-radius: 8px;
 }
 
@@ -426,7 +417,7 @@ a.button-link.disabled:focus {
         width: 100%;
         max-width: 100%;
         position: relative;
-        overflow: hidden; /* Add this line to prevent scrolling for the popup */
+        overflow: hidden;
         padding: 5px 5px;
     }
     
@@ -436,8 +427,8 @@ a.button-link.disabled:focus {
 
     h1 {
         font-size: 22px;
-        margin-bottom: 35px; /* Adjust margin for spacing on mobile */
-        margin-top: 200px; /* Add margin at the top to keep the h1 in frame */
+        margin-bottom: 35px;
+        margin-top: 200px;
     }
 
     form {
