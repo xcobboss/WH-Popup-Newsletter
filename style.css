@@ -78,18 +78,18 @@ form {
 
 .check-all-group {
     display: flex;
-    align-items: center; /* Center items vertically */
-    margin: 0px 0px 0px 92px; /* Adjust margin as needed */
+    align-items: center;
+    margin: 0px 0px 0px 57px;
     width: auto;
 }
 
 .check-all-group input[type="checkbox"] {
-    margin-right: 15px; /* Add spacing between the checkbox and label */
+    margin-right: 15px;
 }
 
 .check-all-group label {
-    font-size: 16px; /* Adjust font size as needed */
-    color: #555555; /* Customize the text color */
+    font-size: 16px;
+    color: #555555;
     cursor: pointer;
 }
 
@@ -166,7 +166,7 @@ h1 {
 }
 
 input[type="checkbox"] {
-    margin: 0 0px 5px 0;
+    margin: 0 20px 5px 0;
 }
 
 input[type="checkbox"] + label {
@@ -175,7 +175,7 @@ input[type="checkbox"] + label {
     position: relative;
     cursor: pointer;
     display: inline-block;
-    width: 135px;
+    width: 180px;
     text-align: left;
 }
 
@@ -332,7 +332,6 @@ a.button-link.disabled:focus {
     text-align: center;
     margin-top: 20px;
     display: none;
-    /* Initially hide the button */
     background-color: #A4383B;
     color: #fff;
     padding: 5px 20px;
@@ -490,20 +489,20 @@ a.button-link.disabled:focus {
     }
 	
 	.department-checkboxes-container {
-        grid-template-columns: repeat(2, 1fr); /* Set it to two columns */
-        grid-template-rows: auto; /* Reset the rows */
-        margin-top: 10px; /* Add some top margin */
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto; 
+        margin-top: 10px;
     }
 
     .department-checkbox-group {
-        text-align: left; /* Align the labels to the left */
+        text-align: left; 
         margin-bottom: 60px;
     }
     
     input[type="submit"],
     a.button-link {
         width: 100%;
-        margin: 10px auto; /* Reduce margin to create less space */
+        margin: 10px auto;
     }
 
     .close-btn {
